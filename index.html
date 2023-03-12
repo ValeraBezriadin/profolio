@@ -14,159 +14,368 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header" style=" background-image: url(./img/background\ image.jpg);">
-        <div class="container">
-      <nav class="nav">
-            <img class="nav__logo" src="./img/icons/logo.svg" alt="logo">
-            <ul class="nav__list">
-                <li class="nav__item">  <a href="" class="nav__link"> Про мене</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Навички</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Послуги</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Портфоліо</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Відгуки</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
-            </ul>
-        
-      </nav>
-    </div>
+    <header
+      class="header"
+      style="background-image: url(./img/background\ image.jpg)"
+    >
+      <div class="container">
+        <nav class="nav">
+          <img class="nav__logo" src="./img/icons/logo.svg" alt="logo" />
+          <button class="nav__button">
+            <span class="nav__line">menu</span>
+            <span class="nav__span"></span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about " class="nav__link"> Про мене</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skils " class="nav__link">Навички</a>
+            </li>
+            <li class="nav__item">
+              <a href="#service " class="nav__link">Послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="#works " class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="#statistic " class="nav__link">Відгуки</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts " class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="hero">
         <div class="container">
-            <p class="hero__sibtitle">
-                Привіт, я Валерій Безрядін
-            </p>
-            <p class="hero__title">
-                frontend-<br>розробник
-            </p>
-            <div class="hero__inner">
-              
-            <p class="hero__text-meta">дивитись роботи</p>
-            <img class="hero__arrow" src="./img/icons/arrow.svg" alt="arrow">   
+          <div class="hero__inner">
+          <p class="hero__sibtitle">Привіт, я Валерій Безрядін</p>
+          <p class="hero__title">frontend- розробник</p>
+          
+           
         </div>
+        <div class="hero__meta">
+          <a class="hero__link"href="#works">
+            дивитись роботи
+          </a>
+        </div>
+          
         </div>
       </section>
     </header>
-     <section class="about">
+    <section class="about">
       <div class="container">
         <div class="about__inner">
-        <h1 class="about__title">
-          Про мене
-        </h1>
-        <p class="about__text">
-          Вітаю всіх на своєму сайті! Мене звуть Іван, я з Києва. Займаюся фронтенд-розробкою понад рік. До розробки займався нелюбимою справою, ходив на нелюбиму роботу, не міг зрозуміти, за що взятися, щоб справа приносила задоволення і гроші, поки не наткнувся на один цікавий курс.
-        </p>
-        <p class="about__text">
-          З того часу пройшов вогонь, воду та мідні труби. Навчання давалося по-різному: десь легше, десь складніше. Щоденна робота над навичками та старанність, з якою я підходив до навчання, вже через кілька місяців принесли плоди – я взяв перше замовлення на фрілансі. З відгуками клієнтів та прикладами робіт можна ознайомитись нижче.
-        </p>
+          <h1 class="about__title" id="about">Про мене</h1>
+          <p class="about__text">
+            Вітаю всіх на своєму сайті! Мене звуть Іван, я з Києва. Займаюся
+            фронтенд-розробкою понад рік. До розробки займався нелюбимою
+            справою, ходив на нелюбиму роботу, не міг зрозуміти, за що взятися,
+            щоб справа приносила задоволення і гроші, поки не наткнувся на один
+            цікавий курс.
+          </p>
+          <p class="about__text">
+            З того часу пройшов вогонь, воду та мідні труби. Навчання давалося
+            по-різному: десь легше, десь складніше. Щоденна робота над навичками
+            та старанність, з якою я підходив до навчання, вже через кілька
+            місяців принесли плоди – я взяв перше замовлення на фрілансі. З
+            відгуками клієнтів та прикладами робіт можна ознайомитись нижче.
+          </p>
+        </div>
       </div>
-      </div>
-     </section>
-     <section class="skils">
+    </section>
+    <section class="skils">
       <div class="container">
-        <h2 class="skils__title">Навыки</h2>
+        <h2 class="skils__title" id="skils">Навыки</h2>
         <div class="skils__inner">
-          <img class="skils__image" src="./img/fotoofme.jpg" alt="foto of me" >
+          <div class="skils__image1">
+            <img
+              class="skils__image"
+              src="./img/fotoofme.jpg"
+              alt="foto of me"
+            />
+          </div>
           <div class="skils__progres">
-            <ul class="skils__list ">
-
-              <li class="skils__item"><p class="skils__text">HTML</p> <div class="skils__progres"><progress class="skils__progres-bar" id="file" max="100" value="80"> 80% </progress></div></li>
-              <li class="skils__item"><p class="skils__text">CSS</p>  <div class="skils__progres"><progress class="skils__progres-bar" id="file" max="100" value="75"> 75% </progress></div></li>
-              <li class="skils__item"><p class="skils__text">JS</p>   <progress class="skils__progres-bar" id="file" max="100" value="65"> 65% </progress></li>
+            <ul class="skils__list">
+              <li class="skils__item">
+                <p class="skils__text">HTML</p>
+                <progress
+                  class="skils__progres-bar"
+                  id="file"
+                  max="100"
+                  value="80"
+                >
+                  80%
+                </progress>
+              </li>
+              <li class="skils__item">
+                <p class="skils__text">CSS</p>
+                <progress
+                  class="skils__progres-bar"
+                  id="file"
+                  max="100"
+                  value="75"
+                >
+                  75%
+                </progress>
+              </li>
+              <li class="skils__item">
+                <p class="skils__text">JS</p>
+                <progress
+                  class="skils__progres-bar"
+                  id="file"
+                  max="100"
+                  value="65"
+                >
+                  65%
+                </progress>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-     </section>
-     <section class="service">
+    </section>
+    <section class="service">
       <div class="container">
-        <h1 class="service__title">
-          Услуги
-        </h1>
+        <h1 class="service__title" id="service">Услуги</h1>
         <div class="service__inner">
-        <ul class="service__list">
-          <li class="service__item">
-            <img class="service__img" src="./img/icons/code.svg" alt="icon code" >
-          </li>
-          <li class="service__item">
-            <h1 class="service__subtitle">Вёрстка проектов</h1>
-          </li>
-          <li class="service__item">
-            <p class="service__text">Сделаю качественную вёрстку вашего  проекта по предоставленному макету или примеру</p>
-          </li>
-        </ul>
-        <ul class="service__list">
-          <li class="service__item">
-            <img class="service__img" src="./img/icons/settings.svg" alt="icon settings" >
-          </li>
-          <li class="service__item">
-            <h1 class="service__subtitle service__subtitle1">Посадка на CMS</h1>
-          </li>
-          <li class="service__item">
-            <p class="service__text">Интегрирую ваш проект в одну из популярных CMS</p>
-          </li>
-        </ul>
-        <ul class="service__list">
-          <li class="service__item">
-            <img class="service__img" src="./img/icons/chat.svg" alt="icon chat" >
-          </li>
-          <li class="service__item">
-            <h1 class="service__subtitle">Поддержка сайта</h1>
-          </li>
-          <li class="service__item">
-            <p class="service__text">Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта</p>
-          </li>
-        </ul>
+          <ul class="service__list">
+            <li class="service__item">
+              <img
+                class="service__img"
+                src="./img/icons/code.svg"
+                alt="icon code"
+              />
+            </li>
+            <li class="service__item">
+              <h1 class="service__subtitle">Вёрстка проектов</h1>
+            </li>
+            <li class="service__item">
+              <p class="service__text">
+                Сделаю качественную вёрстку вашего проекта по предоставленному
+                макету или примеру
+              </p>
+            </li>
+          </ul>
+          <ul class="service__list">
+            <li class="service__item">
+              <img
+                class="service__img"
+                src="./img/icons/settings.svg"
+                alt="icon settings"
+              />
+            </li>
+            <li class="service__item">
+              <h1 class="service__subtitle service__subtitle1">
+                Посадка на CMS
+              </h1>
+            </li>
+            <li class="service__item">
+              <p class="service__text">
+                Интегрирую ваш проект в одну из популярных CMS
+              </p>
+            </li>
+          </ul>
+          <ul class="service__list">
+            <li class="service__item">
+              <img
+                class="service__img"
+                src="./img/icons/chat.svg"
+                alt="icon chat"
+              />
+            </li>
+            <li class="service__item">
+              <h1 class="service__subtitle">Поддержка сайта</h1>
+            </li>
+            <li class="service__item">
+              <p class="service__text">
+                Гарантирую поддержку вашего сайта на протяжениии 30 дней после
+                сдача проекта
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>
-     </section>
-     <section class="works">
+    </section>
+    <section class="works">
       <div class="container">
-       <h1 class="works__title">
-          Мои работы
-       </h1>
-       <div class="works__grid">
-        <img class="works__image" src="./img/img1.png" alt="neature" >
-        <img class="works__image" src="./img/img2.png" alt="neature" >
-        <img class="works__image" src="./img/img3.png" alt="neature" >
-        <img class="works__image" src="./img/img4.png" alt="neature" >
-        <img class="works__image" src="./img/img5.png" alt="neature" >
-        <img class="works__image" src="./img/img6.png" alt="neature" >
-       </div>
+        <h1 class="works__title" id="works">Мои работы</h1>
+        <ul class="works__grid">
+          <li class="works__item">
+            <a
+              class="works__link"
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <img class="works__image" src="./img/img1.png" alt="neature" />
+            </a>
+          </li>
+          <li class="works__item">
+            <a class="works__link" href="#">
+              <img class="works__image" src="./img/img2.png" alt="neature" />
+            </a>
+          </li>
+          <li class="works__item">
+            <a class="works__link" href="#">
+              <img class="works__image" src="./img/img3.png" alt="neature" />
+            </a>
+          </li>
+          <li class="works__item">
+            <a class="works__link" href="#">
+              <img class="works__image" src="./img/img4.png" alt="neature" />
+            </a>
+          </li>
+          <li class="works__item">
+            <a class="works__link" href="#">
+              <img class="works__image" src="./img/img5.png" alt="neature" />
+            </a>
+          </li>
+          <li class="works__item">
+            <a class="works__link" href="#">
+              <img class="works__image" src="./img/img6.png" alt="neature" />
+            </a>
+          </li>
+        </ul>
       </div>
-     </section>
-     <section class="statistic">
+    </section>
+    <section class="statistic" id="statistic">
       <div class="container">
         <div class="statistic__inner">
           <div class="statistic__block">
             <div class="statistic__block-plus">
-            <img class="statistic__image statistic__image1" src="./img/icons/works.svg" alt="works" >
-            <p class="statistic__text">Выполненных работ</p>
-            <p class="statistic__meta">56</p>
-          </div>
-          </div>
-          <div class="statistic__block">
-            <div class="statistic__block-plus">
-            <img class="statistic__image statistic__image2" src="./img/icons/clients.svg" alt="clients" >
-            <p class="statistic__text">Довольных клиентов</p>
-            <p class="statistic__meta">23</p>
-          </div>
+              <img
+                class="statistic__image statistic__image1"
+                src="./img/icons/works.svg"
+                alt="works"
+              />
+              <p class="statistic__text">Выполненных работ</p>
+              <p class="statistic__meta">56</p>
+            </div>
           </div>
           <div class="statistic__block">
             <div class="statistic__block-plus">
-            <img class="statistic__image statistic__image3" src="./img/icons/coffee.svg" alt="cup" >
-            <p class="statistic__text">Выпито чашек кофе</p>
-            <p class="statistic__meta">477</p>
-          </div>
+              <img
+                class="statistic__image statistic__image2"
+                src="./img/icons/clients.svg"
+                alt="clients"
+              />
+              <p class="statistic__text">Довольных клиентов</p>
+              <p class="statistic__meta">23</p>
+            </div>
           </div>
           <div class="statistic__block">
             <div class="statistic__block-plus">
-            <img class="statistic__image statistic__image4" src="./img/icons/chat.svg" alt="chat" >
-            <p class="statistic__text">Всего отзывов</p>
-            <p class="statistic__meta">48</p>
+              <img
+                class="statistic__image statistic__image3"
+                src="./img/icons/coffee.svg"
+                alt="cup"
+              />
+              <p class="statistic__text">Выпито чашек кофе</p>
+              <p class="statistic__meta">477</p>
+            </div>
           </div>
+          <div class="statistic__block">
+            <div class="statistic__block-plus">
+              <img
+                class="statistic__image statistic__image4"
+                src="./img/icons/chat.svg"
+                alt="chat"
+              />
+              <p class="statistic__text">Всего отзывов</p>
+              <p class="statistic__meta">48</p>
+            </div>
           </div>
         </div>
       </div>
-     </section>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <h1 class="contacts__title" id="contacts">Контакты</h1>
+        <div class="contacts__inner">
+          <div class="contacts__info">
+            <p class="contacts__text">
+              Связаться со мной можно, воспользовавшись контактной формой<br />
+              или напрямую по номеру телефона, email, в соцсетях:
+            </p>
+            <a class="contacts__link" href="tel:+3805011111"
+              >+38 (050) 111 11 11</a
+            >
+            <a class="contacts__link" href="mailto:frontend-monster@email.com"
+              >frontend-monster@email.com</a
+            >
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link-img" href=""
+                  ><img
+                    class="contacts__image"
+                    src="./img/icons/instagram.svg"
+                    alt="istagram"
+                /></a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link-img" href=""
+                  ><img
+                    class="contacts__image"
+                    src="./img/icons/facebook.svg"
+                    alt="facebook"
+                /></a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link-img" href=""
+                  ><img
+                    class="contacts__image"
+                    src="./img/icons/telegram.svg"
+                    alt="telegram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <form class="contacts__forma">
+            <div class="contacts__meta">
+              <label for="">
+                <p class="contacts__text">Ваше имя</p>
+                <input
+                  class="contacts__input"
+                  placeholder="Ваше имя"
+                  type="text"
+                  required
+                />
+              </label>
+              <label class="contacts__label">
+                <p class="contacts__text">Номер телефона</p>
+                <input
+                  class="contacts__input"
+                  placeholder="Номер телефона"
+                  type="text"
+                  required
+                />
+              </label>
+            </div>
+            <label class="contacts__label">
+              <p class="contacts__text">Ваше сообщение</p>
+              <textarea
+                class="contacts__area"
+                placeholder="Текст вашего сообщения"
+                name=""
+              ></textarea>
+            </label>
+            <label for="">
+              <div class="consultat__submit">
+                <input
+                  class="contacts__submit"
+                  type="submit"
+                  value="отправить"
+                />
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="futter">
+      <img class="futter__image" src="./img/icons/logo.svg" alt="logo" />
+    </section>
     <script src="./index.js"></script>
   </body>
 </html>
