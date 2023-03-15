@@ -88,14 +88,14 @@ textarea {
   z-index: 1;
 }
 
-.header::after {
+ .header::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(35, 82, 222, 0.5);
+  background: rgb(75,72,128,0.2);
   z-index: -1;
 }
 
@@ -275,23 +275,18 @@ textarea {
   right: 60px;
   width: 37px;
   height: 23px;
-  animation-name: arrow;
-  animation-duration: 1.85s;
-  animation-iteration-count: infinite;
-
-  
+  animation: arrow 1s alternate infinite ;
   background-image: url(./img/icons/arrow.svg);
 }
 @keyframes arrow {
   0%{
     top:25px;
   }
-  50%{
-    top:60px;
-  }
+  
   100%{
-    top:40px;
+    top:50px;
   }
+  
 }
 @media screen and (max-width: 992px) {
   .hero__sibtitle {
@@ -399,18 +394,28 @@ textarea {
 }
 
 .skils__progres-bar {
-  border-radius: 0;
-  box-shadow: none;
-  height: 33px;
-  width: 90%;
+  background-color: #DBDBED;
+  height: 35px;
+  max-width: 600px;
+  width: 100%;
+  line-height: 35px;
+  text-align: center;
+  user-select: none;
+  position: relative;
+  color: var(--black);
+  z-index: 1;
+}
+.skils__rating{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #2352de;
+  height: 35px;
+  z-index: -1;
+  
 }
 
-.skils__progres-bar::-webkit-progress-value {
-  background-color: #2352de;
-}
-.skils__progres-bar::-webkit-progress-bar {
-  background-color: #dbdbed;
-}
 
 /* media skils */
 @media screen and (max-width: 1200px) {
@@ -529,6 +534,10 @@ textarea {
 .works__image {
   max-width: 360px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  
 }
 /* works media */
 @media screen and (max-width: 992px) {
