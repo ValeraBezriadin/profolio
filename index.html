@@ -26,24 +26,9 @@
             <span class="nav__span"></span>
           </button>
           <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#about " class="nav__link"> Про мене</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skils " class="nav__link">Навички</a>
-            </li>
-            <li class="nav__item">
-              <a href="#service " class="nav__link">Послуги</a>
-            </li>
-            <li class="nav__item">
-              <a href="#works " class="nav__link">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a href="#statistic " class="nav__link">Відгуки</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contacts " class="nav__link">Контакти</a>
-            </li>
+            <!-- <li class="nav__item">
+              <a href=" " class="nav__link"> Про мене</a>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -197,42 +182,9 @@
     </section>
     <section class="works">
       <div class="container">
-        <h1 class="works__title" id="works">Мої работи</h1>
+        <h1 class="works__title" id="works">Мої роботи</h1>
         <ul class="works__grid">
-          <li class="works__item">
-            <a
-              class="works__link"
-              href="https://valerabezriadin.github.io/Town/"
-              target="_blank"
-            >
-              <img class="works__image" src="./img/works1.png" alt="works" />
-            </a>
-          </li>
-          <li class="works__item">
-            <a class="works__link" href="https://valerabezriadin.github.io/Neapol/" target="_blank">
-              <img class="works__image" src="./img/works2.png" alt="works" />
-            </a>
-          </li>
-          <li class="works__item">
-            <a class="works__link" href="https://valerabezriadin.github.io/IFAB/" target="_blank">
-              <img class="works__image" src="./img/works3.png" alt="works" />
-            </a>
-          </li>
-          <li class="works__item">
-            <a class="works__link" href="#" target="_blank">
-              <img class="works__image" src="./img/img4.png" alt="works" />
-            </a>
-          </li>
-          <li class="works__item">
-            <a class="works__link" href="#" target="_blank">
-              <img class="works__image" src="./img/img5.png" alt="works" />
-            </a>
-          </li>
-          <li class="works__item">
-            <a class="works__link" href="#" target="_blank">
-              <img class="works__image" src="./img/img6.png" alt="works" />
-            </a>
-          </li>
+        
         </ul>
       </div>
     </section>
@@ -336,6 +288,7 @@
                   class="contacts__input"
                   placeholder="Ваше імя"
                   type="text"
+                  name="name"
                   required
                 />
               </label>
@@ -344,7 +297,8 @@
                 <input
                   class="contacts__input"
                   placeholder="Номер телефону"
-                  type="text"
+                  type="tel"
+                  name="phone"
                   required
                 />
               </label>
@@ -354,7 +308,7 @@
               <textarea
                 class="contacts__area"
                 placeholder="Текст вашего повідомлення"
-                name=""
+                name="message"
               ></textarea>
             </label>
             <label for="">
@@ -374,5 +328,6 @@
       <img class="futter__image" src="./img/icons/logo.svg" alt="logo" />
     </section>
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
